@@ -1,3 +1,13 @@
+class Book {
+  constructor(title, author, pages, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+
+}
+
 const myLibrary = [
   holes = new Book('Holes', 'Louis Sachar', 288, 'read'),
 ];
@@ -7,12 +17,6 @@ const closeFormButton = document.querySelector('.closeForm');
 const modalForm = document.querySelector('.modal-form');
 const mainGrid = document.querySelector('.main-grid');
 
-function Book(title, author, pages, read){
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.read = read
-}
 
 addBookButton.addEventListener('click', () => {
   modalForm.showModal();
